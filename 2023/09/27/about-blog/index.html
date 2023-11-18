@@ -267,10 +267,10 @@
 <h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>​        以管理员身份运行PowerShell</p>
 <p>​        执行“set-ExecutionPolicy RemoteSigned”即可</p>
 <h1 id="问题二："><a href="#问题二：" class="headerlink" title="问题二："></a>问题二：</h1><p>   hexo d部署文件时总是显示unable to access “地址”，在csdn探索，可能是公钥出现了问题。</p>
-<h2 id="解决方案：-1"><a href="#解决方案：-1" class="headerlink" title="解决方案："></a>解决方案：</h2><p>​        1.在Powershell中输入“ssh -T <a class="link"   href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#111;&#109;" >&#103;&#105;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#111;&#109; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>”测试猜想</p>
+<h2 id="解决方案：-1"><a href="#解决方案：-1" class="headerlink" title="解决方案："></a>解决方案：</h2><p>​        1.在Powershell中输入“ssh -T <a class="link"   href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;" >&#x67;&#105;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>”测试猜想</p>
 <p>​         2.更换密钥“ssh-keygen -t rsa”</p>
 <p>​        2.打开公钥文件id_rsa.pub 复制其中内容<br>​        3.在Github中，删除原来公钥，新建公钥。个人头像下setting选项，找到ssh and GPG keys删除旧公钥，将复制的公钥文件id_rsa.pub 复制到新公钥里去，最后添加。</p>
-<p>​        4.验证公钥是否起作用。输入“ssh -T <a class="link"   href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;" >&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>”看是否出现成功</p>
+<p>​        4.验证公钥是否起作用。输入“ssh -T <a class="link"   href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;" >&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>”看是否出现成功</p>
 <h1 id="问题三："><a href="#问题三：" class="headerlink" title="问题三："></a>问题三：</h1><p>  在hexo d 时，出现spawn failed</p>
 <p>判断：可能是在进行hexo d 时改变了一些“.deploy_git”文件下的内容</p>
 <h2 id="解决方案：-2"><a href="#解决方案：-2" class="headerlink" title="解决方案："></a>解决方案：</h2><p>   1.删除“.deploy_git”文件</p>
